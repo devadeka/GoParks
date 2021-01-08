@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import Header from '../../presentational/Header';
 import Body from '../../presentational/Page/Body';
-import {
-  PageComponent,
-  FooterComponent,
-} from '../../presentational/Page/styled';
+import { PageComponent } from '../../presentational/Page/styled';
 import {
   PlateInput,
   PlatContainer,
