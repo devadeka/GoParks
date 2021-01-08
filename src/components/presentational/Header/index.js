@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {
   HeaderTitle,
   HeaderComponent,
@@ -8,14 +9,16 @@ import {
 } from './styled';
 
 const Header = () => (
-  <HeaderComponent>
-    <HeaderTitle>GoParks</HeaderTitle>
-    <HeaderButton>
-      <SyncUpIcon />
-    </HeaderButton>
-    <HeaderButton>
-      <LogoutIcon />
-    </HeaderButton>
-  </HeaderComponent>
+  <Link to="/park_select">
+    <HeaderComponent>
+      <HeaderTitle>GoParks</HeaderTitle>
+      <HeaderButton>
+        <SyncUpIcon />
+      </HeaderButton>
+      <HeaderButton>
+        <LogoutIcon />
+      </HeaderButton>
+    </HeaderComponent>
+  </Link>
 );
 export default Header;
