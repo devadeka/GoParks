@@ -12,9 +12,9 @@ const Header = () => {
   const history = useHistory();
   const handleTitleClick = () => history.push('/park_select');
   return (
-    <HeaderComponent onClick={handleTitleClick}>
+    <HeaderComponent>
       <HeaderTitle>GoParks</HeaderTitle>
-      <HeaderButton>
+      <HeaderButton onClick={handleTitleClick}>
         <SyncUpIcon />
       </HeaderButton>
       <HeaderButton>
