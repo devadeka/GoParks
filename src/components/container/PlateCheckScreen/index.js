@@ -38,11 +38,7 @@ const PlateCheckScreen = () => {
       <Header />
       <Body noFooter>
         <div>
-          <ParkName>
-            Blue MountainBlue MountainBlue MountainBlue MountainBlue
-            MountainBlue MountainBlue MountainBlue MountainBlue
-            MountainsssssssssBlue Mountains
-          </ParkName>
+          <ParkName>Blue Mountain</ParkName>
           <PlatContainer>
             <PlateState>{selectedState}</PlateState>
             <PlateInput value={plateText} onChange={handlePlateTextChange} />

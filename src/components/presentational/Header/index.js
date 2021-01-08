@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import {
   HeaderTitle,
   HeaderComponent,
@@ -8,9 +8,11 @@ import {
   LogoutIcon,
 } from './styled';
 
-const Header = () => (
-  <Link to="/park_select">
-    <HeaderComponent>
+const Header = () => {
+  const history = useHistory();
+  const handleTitleClick = () => history.push('/park_select');
+  return (
+    <HeaderComponent onClick={handleTitleClick}>
       <HeaderTitle>GoParks</HeaderTitle>
       <HeaderButton>
         <SyncUpIcon />
@@ -19,6 +21,6 @@ const Header = () => (
         <LogoutIcon />
       </HeaderButton>
     </HeaderComponent>
-  </Link>
-);
+  );
+};
 export default Header;
